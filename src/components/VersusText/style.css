@@ -1,0 +1,15 @@
+.versus-text{
+    font-family: 'Press Start 2P', sans-serif;
+    font-weight: 1;
+    font-style: normal;
+    text-shadow: 
+        -2px -2px 0 #000,  
+         2px -2px 0 #000,
+        -2px  2px 0 #000,
+         2px  2px 0 #000,
+        -2px  0 0 #000,
+         2px  0 0 #000,
+         0  2px 0 #000,
+         0 -2px 0 #000;
+    color: var(--color-sandstorm);
+}
