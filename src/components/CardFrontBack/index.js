@@ -6,12 +6,31 @@ import htmlLogo from '../../images/logo-html.png';
 
 window.CardFrontBack = {}
 
+let $counter = 1;
+let $card1 = '';
+
+
 window.CardFrontBack.flipCard = (event) => {
     const $origin = event.target;
-    const $cardFrontBack = event.target.closest('.card-front-back');
+    const $cardFrontBack = $origin.closest('.card-front-back');
 
     $cardFrontBack.classList.toggle('active');
 
+    if ($counter < 2){
+        $card1 = $cardFrontBack;
+        $counter = 2;
+        console.log($counter)
+    }else {        
+        setTimeout(function(){
+            $cardFrontBack.classList.toggle('active');
+            $card1.classList.toggle('active');
+
+            window.ScoreBoard.HandleClick();
+        },500)
+
+        $counter = 0;  
+        console.log($counter)
+    }
 }
 
 function CardFrontBack(){

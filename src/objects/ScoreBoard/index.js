@@ -8,11 +8,10 @@ import PlayerScore from '../../components/PlayerScore';
 window.ScoreBoard = {};
 
 window.ScoreBoard = {
-    HandleClick: (event) => {
-      const $origin = event.target;
-      const $iconArrow = $origin.closest('.score-player').querySelector('.icon-arrow');
+    HandleClick: () => {
+      const $divIconArrow = document.querySelector('#div-icon-arrow');
   
-    $iconArrow.classList.toggle('active');
+        $divIconArrow.classList.toggle('active');
     }
   };
 
@@ -20,18 +19,21 @@ function ScoreBoard(){
 
     return /*html*/`
         <header class="score-board">
-                ${PlayerName("player1")}
-                <div class='score-player' onClick="ScoreBoard.HandleClick(event)">
-                    ${IconArrow("active")}
-                    ${PlayerScore()}
-                </div>
-                ${VersusText()}
-                
-                <div class='score-player' onClick="ScoreBoard.HandleClick(event)">
+                <div id='div-icon-arrow'>
                     ${IconArrow("")}
-                    ${PlayerScore()}
                 </div>
-                ${PlayerName("player2")}
+                <div class='div-score'>
+                    ${PlayerName("player1")}
+                    <div class='score-player' onClick="ScoreBoard.HandleClick(event)">
+                        ${PlayerScore()}
+                    </div>
+                    ${VersusText()}
+                    
+                    <div class='score-player' onClick="ScoreBoard.HandleClick(event)">
+                        ${PlayerScore()}
+                    </div>
+                    ${PlayerName("player2")}
+                </div>
 
         </header>
     `

@@ -2,9 +2,9 @@ import './style.css';
 import IconArrowDown from '../../images/IconArrowDown.png';
 
 
-function IconArrow(classActive){
+function IconArrow(){
     return `
-        <section class='icon-arrow ${classActive}'>
+        <section class='icon-arrow'>
             <img src='${IconArrowDown}' alt='An arrow indicating whose turn it is'>
         </section>
     `
