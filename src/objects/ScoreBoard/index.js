@@ -10,7 +10,7 @@ window.ScoreBoard = {};
 window.ScoreBoard = {
     HandleClick: () => {
       const $divIconArrow = document.querySelector('#div-icon-arrow');
-  
+        
         $divIconArrow.classList.toggle('active');
     }
   };
@@ -25,12 +25,12 @@ function ScoreBoard(){
                 <div class='div-score'>
                     ${PlayerName("player1")}
                     <div class='score-player' onClick="ScoreBoard.HandleClick(event)">
-                        ${PlayerScore()}
+                        ${PlayerScore(3)}
                     </div>
                     ${VersusText()}
                     
                     <div class='score-player' onClick="ScoreBoard.HandleClick(event)">
-                        ${PlayerScore()}
+                        ${PlayerScore(2)}
                     </div>
                     ${PlayerName("player2")}
                 </div>

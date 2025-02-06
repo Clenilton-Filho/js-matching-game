@@ -1,13 +1,32 @@
 .player-score{
-    background-color: var(--color-old-silver);
     width: 50px;
     height: 20px;
     display: flex;
     box-sizing: border-box;
+    gap: 1px;
+    flex-direction: row-reverse;
     border: 2px solid var(--color-fiery-rose);
+    padding: 1px;
+    background-color: var(--color-floral-white);
 }
+
 .points{
     width: 14px;
     height: 14px;
-    border: 1px solid var(--color-floral-white);
+    background-color: var(--color-old-silver);
+}
+
+.player-score[data-pointsAmount = '1']{
+    flex-direction: row;
+}
+
+.player-score[data-pointsAmount = '1'] > .points:first-child{ 
+    background-color: var(--color-mantis);
+}
+
+.player-score[data-pointsAmount = '2'] > .points:nth-child(n+2){ 
+    background-color: var(--color-mantis);
+}
+.player-score[data-pointsAmount = '3'] > .points{ 
+    background-color: var(--color-mantis);
 }
