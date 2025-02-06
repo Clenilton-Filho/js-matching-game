@@ -1,10 +1,10 @@
 import './style.css';
 import aluraPixel from '../../images/alura-pixel.png';
 
-function CardGame(){
-    return `
+function CardGame(icon = aluraPixel, alt = 'Alura logo'){
+    return /*html*/`
         <article class='card-game'>
-            <img src= ${aluraPixel} alt='Logo da plataforma Alura'>
+            <img src= "${icon}" alt='${alt}'>
         </article>
     `;
 }

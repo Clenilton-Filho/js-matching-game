@@ -2,10 +2,10 @@ import "../../styles/elements/base.css";
 import "./style.css"
 
 function PlayerName(name){
-    return `
-        <section class = 'player-name'>
+    return /*html*/`
+        <p class = 'player-name'>
             ${name}
-        </section>
+        </p>
     `
 };
 

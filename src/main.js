@@ -3,8 +3,14 @@ import './styles/generic/reset.css';
 import './styles/elements/base.css';
 
 import BoardGame from './objects/BoardGame';
+import ScoreBoard from './objects/ScoreBoard';
 
 const $root = document.querySelector('#root');
-const $htmlBoardGame = BoardGame(6);
 
-$root.insertAdjacentHTML("beforeend", $htmlBoardGame);
+
+$root.insertAdjacentHTML("beforeend",/*html*/ 
+    `
+        ${ScoreBoard()}
+        ${BoardGame(6)}
+    ` 
+    );

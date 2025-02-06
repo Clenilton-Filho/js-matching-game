@@ -2,10 +2,10 @@ import './style.css';
 import IconArrowDown from '../../images/IconArrowDown.png';
 
 
-function IconArrow(){
+function IconArrow(classActive){
     return `
-        <section class='icon-arrow'>
-            <img src='${IconArrowDown}' alt='An arrow indicating the player that makes the next move'>
+        <section class='icon-arrow ${classActive}'>
+            <img src='${IconArrowDown}' alt='An arrow indicating whose turn it is'>
         </section>
     `
 }

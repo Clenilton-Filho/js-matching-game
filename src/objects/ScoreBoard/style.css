@@ -1,0 +1,25 @@
+.score-board{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.score-player{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    margin-top: -23px;
+    cursor: pointer;
+}
+
+.icon-arrow {
+    opacity: 0%;
+    transition: opacity 400ms ease-in-out;
+}
+
+.icon-arrow.active{
+    opacity: 100%;
+}
+
