@@ -16,17 +16,3 @@
 .score-player{
     cursor: pointer;
 }
-
-#div-icon-arrow {
-    min-width: 34.3%;
-    margin: auto;
-}
-
-.icon-arrow{
-    transition: margin 300ms ease-in-out;
-}
-
-#div-icon-arrow.active > .icon-arrow{
-    margin-left: calc(100% - 20px);
-}   
-

@@ -1,4 +1,10 @@
 .icon-arrow{
     width: 20px;
     height: 15px;
+    margin-left: 106px ;
+    transition: margin 300ms ease-in-out;
+}
+
+.icon-arrow[data-player = "player-2"]{
+    margin-left: calc(100% - 126px);
 }

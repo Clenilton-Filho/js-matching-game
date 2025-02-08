@@ -5,15 +5,6 @@ import PlayerName from '../../components/PlayerName';
 import VersusText from '../../components/VersusText';
 import PlayerScore from '../../components/PlayerScore';
 
-window.ScoreBoard = {};
-
-window.ScoreBoard = {
-    HandleClick: () => {
-      const $divIconArrow = document.querySelector('#div-icon-arrow');
-        
-        $divIconArrow.classList.toggle('active');
-    }
-  };
 
 function ScoreBoard(){
 
@@ -24,13 +15,13 @@ function ScoreBoard(){
                 </div>
                 <div class='div-score'>
                     ${PlayerName("player1")}
-                    <div class='score-player' onClick="ScoreBoard.HandleClick(event)">
-                        ${PlayerScore(3)}
+                    <div class='score-player' onClick="IconArrow.HandleClick(event)">
+                        ${PlayerScore(0)}
                     </div>
                     ${VersusText()}
                     
-                    <div class='score-player' onClick="ScoreBoard.HandleClick(event)">
-                        ${PlayerScore(2)}
+                    <div class='score-player' onClick="IconArrow.HandleClick(event)">
+                        ${PlayerScore(0)}
                     </div>
                     ${PlayerName("player2")}
                 </div>

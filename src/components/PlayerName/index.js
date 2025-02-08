@@ -1,4 +1,3 @@
-import "../../styles/elements/base.css";
 import "./style.css"
 
 function PlayerName(name){

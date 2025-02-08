@@ -1,4 +1,4 @@
-# react-matching-game
+# js-matching-game
  A two-player matching game that displays the current score and indicates whose turn it is. The game also has a button to restart the game at the final results screen.
 
 ## Disclaimer
