@@ -16,12 +16,12 @@ function ScoreBoard(){
                 <div class='div-score'>
                     ${PlayerName("player1")}
                     <div class='score-player' onClick="IconArrow.HandleClick(event)">
-                        ${PlayerScore(0)}
+                        ${PlayerScore('1',0)}
                     </div>
                     ${VersusText()}
                     
                     <div class='score-player' onClick="IconArrow.HandleClick(event)">
-                        ${PlayerScore(0)}
+                        ${PlayerScore('2',0)}
                     </div>
                     ${PlayerName("player2")}
                 </div>

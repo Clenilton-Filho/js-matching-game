@@ -1,9 +1,9 @@
 import './style.css';
 
-function PlayerScore(pointsAmount = 0) {
+function PlayerScore(playerNumber,pointsAmount = 0) {
     
     return /*html*/ `
-    <section data-pointsAmount="${pointsAmount}" class='player-score'>
+    <section id = 'player-${playerNumber}' data-pointsAmount="${pointsAmount}" class='player-score'>
         <div class='points'></div>
         <div class='points'></div>
         <div class='points'></div>

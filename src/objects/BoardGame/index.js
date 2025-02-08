@@ -6,7 +6,7 @@ import htmlLogo from '../../images/logo-html.png';
 
 import CardFrontBack from '../../components/CardFrontBack';
 
-function BoardGame(amountCards) {
+function BoardGame() {
     const cardIcons = [
         {
             icon: javascriptLogo,

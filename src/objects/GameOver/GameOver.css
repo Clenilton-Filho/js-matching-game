@@ -1,0 +1,59 @@
+.game-over-screen{
+    display: none;
+    position: absolute;
+    background-color: var(--color-arsenic);
+    top: 0;
+    width: 320px;
+    height: 100vh;
+    opacity: 0;
+    transition: opacity 700ms ease-in-out;
+}
+
+.game-over-screen.active{
+    display: block;
+    opacity: 100%;    
+}
+
+.game-over{
+    background-color: var(--color-pomb-and-power);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 90%;
+    padding-top:5%;
+    padding-bottom: 5%;
+    gap: 15px;
+    top: 50%;
+    left: 50%;
+    border: 2px solid var(--color-floral-white);
+    transform: translate(-50%,-50%);
+    border-radius: 5px;
+}
+
+.game-over-text{
+    text-align: center;
+}
+
+.winner{
+    font-size: 2rem;
+    color: var(--color-eggshell);
+}
+
+.winner-text{
+    font-size: 1.5rem;
+    color: var(--color-mantis);
+    width: 225px;
+}
+
+.restart-button{
+    background-color: var(--color-fiery-rose);
+    font-family: 'Press Start 2P';
+    color: var(--color-floral-white);
+    width: 85%;
+    padding: 8px;
+    border: 2px solid var(--color-floral-white);
+    border-radius: 5px;
+    cursor: pointer;
+}

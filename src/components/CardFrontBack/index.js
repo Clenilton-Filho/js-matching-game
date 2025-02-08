@@ -14,6 +14,13 @@ window.CardFrontBack.flipCard = (event) => {
     const $dataplayer = document.querySelector('.icon-arrow').dataset.player;
     const $playerScores = document.querySelectorAll('.player-score');
 
+    let playerOneScore = parseInt($playerScores[0].dataset.pointsamount);
+    let playerTwoScore = parseInt($playerScores[1].dataset.pointsamount);
+
+    if ($cardFrontBack === $card1) {
+        return;
+    }
+
     $cardFrontBack.classList.toggle('active');
 
     if ($counter < 2) {
@@ -37,12 +44,11 @@ window.CardFrontBack.flipCard = (event) => {
             activeCards += 2;
 
             if ($dataplayer === 'player-1') {
-                let playerOneScore = parseInt($playerScores[0].dataset.pointsamount, 10);
                 playerOneScore++;
+
                 $playerScores[0].dataset.pointsamount = playerOneScore;
                 window.IconArrow.HandleClick();
             } else {
-                let playerTwoScore = parseInt($playerScores[1].dataset.pointsamount);
                 playerTwoScore++;
 
                 $playerScores[1].dataset.pointsamount = playerTwoScore;
@@ -51,12 +57,9 @@ window.CardFrontBack.flipCard = (event) => {
             }
         }
 
-        
-
         if (activeCards == 6){
-            setTimeout(()=>{ 
-                window.alert(`${$dataplayer} wins!`);
-                location.reload();
+            setTimeout(()=>{
+                window.DefineWinner(playerOneScore,playerTwoScore);
             },1000);
         }
 

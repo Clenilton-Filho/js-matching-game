@@ -1,13 +1,13 @@
 .card-front-back{
     --width: 130px;
-    --height: 160px;
+    --height: 155px;
 
     height: var(--height);
     width: var(--width);
     cursor: pointer;
     position: relative;
     transform-style: preserve-3d;
-    transition: transform 400ms cubic-bezier(0.42, 0, 0.54, 1.68); 
+    transition: transform 400ms cubic-bezier(0.42, 0, 0.54, 1.68);
 }
 
 .card-front-back.active{
