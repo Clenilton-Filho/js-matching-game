@@ -15,7 +15,7 @@ https://youtu.be/aUDgoPsrPNg
 - **Restart Button**: Quickly restart the game from the final results screen by reloading the page from a button click.
 
 ## Usage
-1. Open the game in your browser.
+1. Open the game in your browser using the GitHub Pages link: [Play JS Matching Game](https://clenilton-filho.github.io/js-matching-game/)
 2. Choose your moves and match the pairs.
 3. The game will display the current score and indicate the player to make the next move.
 4. Use the restart button on the final results screen to start a new game by reloading the page.
