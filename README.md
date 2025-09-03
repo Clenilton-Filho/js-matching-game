@@ -2,8 +2,9 @@
  A two-player matching game that displays the current score and visually indicates whose turn it is to play. The game also has a button to restart the game at the final results screen.
 
 ## Screenshots
-![Game](src/images/screenshots/game.jpg)
-![Results screen](src/images/screenshots/winner.jpg)
+
+<img src="src/images/screenshots/game.jpg" height="200px">
+<img src="src/images/screenshots/winner.jpg" height="200px">
 
 ## Disclaimer
 This project was created as part of an online course by MarcoBrunoDev on Youtube, using Vite.js to practice the structural layout of React projects. Although the course is still incomplete, i managed to finish a good portion of the project with the knowledge acquired throughout the course.
